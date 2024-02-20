@@ -1,0 +1,45 @@
+main {
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px 100px 0;
+}
+login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 10px;
+    height: 200px;
+    width: 40%;
+    min-width: 300px;
+}
+login > form {
+    margin: 10px;
+}
+login > form > * {
+    margin: 5px;
+}
+signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 10px;
+    height: 300px;
+    width: 40%;
+    min-width: 300px;
+}
+signup > form {
+    margin: 10px;
+}
+signup > form > * {
+    margin: 5px;
+}
+
+.hidden {
+    display: none;
+}
