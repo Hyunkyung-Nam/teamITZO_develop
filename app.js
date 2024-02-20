@@ -17,7 +17,7 @@ app.use('/api/user', userRouter);
 const communityRouter = require('./routes/community');
 app.use('/api/community', communityRouter);
 
-db.sequelize.sync({ force: false }).then(() => {
+db.sequelize.sync({ force: true }).then(() => {
     app.listen(PORT, () => {
         console.log(`http://localhost:${PORT}`);
     });

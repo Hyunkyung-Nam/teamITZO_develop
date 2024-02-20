@@ -1,5 +1,4 @@
 (async function () {
-    console.log('hi');
     try {
         const res = await axios({
             method: 'GET',
@@ -7,7 +6,6 @@
         });
 
         const { success, result } = res.data;
-        console.log(success, result);
         const ul = document.querySelector('ul');
         if (success) {
             for (let i = 0; i < result.length; i++) {
@@ -28,6 +26,8 @@
                 ul.insertAdjacentHTML('afterend', html);
             }
             console.log('끝');
+        } else {
+            //로그인 안되어있는경우 글쓰기 및 삭제권한 주지 말기
         }
     } catch (error) {
         console.log(error);
