@@ -23,5 +23,6 @@ const uploadDetail = multer({
 
 router.get('/all', controller.all);
 router.post('/write', uploadDetail.single('file'), controller.write);
+router.get('/:id', controller.datail);
 
 module.exports = router;

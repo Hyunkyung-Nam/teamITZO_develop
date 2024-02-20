@@ -1,0 +1,34 @@
+main {
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px 0;
+}
+
+.title-box {
+    width: 50%;
+}
+.title {
+    width: 100%;
+    text-align: center;
+}
+.content-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 100%;
+    text-align: center;
+}
+.img-box {
+    width: 30%;
+}
+.content-img {
+    width: 100%;
+}

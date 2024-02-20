@@ -14,14 +14,20 @@
                 const html = `<li>
                      <dl>
                          <dt class="photo">
-                             <img src="../../public/uploads/${result[i].imgPath}"/>
+                            <a href="/community/${result[i].id}">
+                                <img src="../../public/uploads/${result[i].imgPath}"/>
+                            </a>
                          </dt>
-                         <dd>${result[i].title}</dd>
+                         <dd>
+                             <a href="/community/${result[i].id}">
+                                ${result[i].title}
+                            </a></dd>
                      </dl>
                  </li>
                `;
-                ul.insertAdjacentHTML('beforeend', html);
+                ul.insertAdjacentHTML('afterend', html);
             }
+            console.log('끝');
         }
     } catch (error) {
         console.log(error);

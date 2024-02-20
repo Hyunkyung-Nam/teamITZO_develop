@@ -18,6 +18,7 @@ router.get('/random/keyword', controller.randomKeyword);
 router.get('/random/content', controller.content);
 //커뮤니티
 router.get('/community', controller.community);
+router.get('/community/:id', controller.communityDetail);
 
 //회원관련페이지
 router.get('/user/signup', controller.signup);

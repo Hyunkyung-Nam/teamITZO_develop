@@ -27,3 +27,19 @@ exports.write = async (req, res) => {
         res.json({ success: false, message: '오류가 발생하였습니다', error });
     }
 };
+
+exports.datail = async (req, res) => {
+    const id = req.params.id;
+
+    try {
+        const result = await Community.findOne({ where: { id: String(id) } });
+        console.log('result', result);
+        if (result) {
+            res.json({ success: true, result });
+        } else {
+            res.json({ success: false, result: '데이터 불러오기에 실패하였습니다.' });
+        }
+    } catch (error) {
+        res.json({ success: false, message: '오류가 발생하였습니다', error });
+    }
+};

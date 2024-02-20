@@ -32,6 +32,9 @@ exports.content = (req, res) => {
 exports.community = (req, res) => {
     res.render('main/community');
 };
+exports.communityDetail = (req, res) => {
+    res.render('main/community_detail');
+};
 
 //유저관련 페이지 열기
 exports.signup = (req, res) => {
